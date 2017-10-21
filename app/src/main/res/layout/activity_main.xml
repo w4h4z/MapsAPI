@@ -5,12 +5,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <fragment
-        android:id="@+id/streetviewpanorama"
-        android:name="com.google.android.gms.maps.StreetViewPanoramaFragment"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp" />
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        map:cameraBearing="112.5"
+        map:cameraTargetLat="-7.966739"
+        map:cameraTargetLng="112.633840"
+        map:cameraTilt="65"
+        map:cameraZoom="17" />
 
 </android.support.constraint.ConstraintLayout>
